@@ -1,0 +1,26 @@
+# --- Python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# --- Node / frontend ---
+node_modules/
+frontend/dist/
+frontend/.env.local
+
+# --- Env files (never commit real secrets) ---
+.env
+backend/.env
+
+# --- OS / editor ---
+.DS_Store
+.vscode/
+.idea/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Local Postgres data dump artifacts (not the project's SQL scripts) ---
+*.sql.bak

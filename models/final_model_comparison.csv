@@ -1,0 +1,10 @@
+model,accuracy,precision,recall,f1,roc_auc
+Logistic Regression (SMOTE),0.7459,0.5139,0.7914,0.6232,0.8369
+Logistic Regression (class_weight),0.7381,0.5043,0.7754,0.6112,0.8393
+XGBoost (scale_pos_weight),0.7488,0.5206,0.6765,0.5884,0.8134
+"XGBoost (Tuned, SMOTE)",0.7779,0.5805,0.5882,0.5843,0.829
+"KNN (SMOTE, k=15)",0.6891,0.4525,0.8155,0.5821,0.8084
+XGBoost (SMOTE),0.78,0.5879,0.5722,0.5799,0.8247
+"Random Forest (Tuned, SMOTE)",0.7779,0.5845,0.5642,0.5741,0.8206
+Random Forest (SMOTE),0.775,0.5785,0.5615,0.5699,0.8202
+Random Forest (class_weight),0.7828,0.6172,0.4786,0.5392,0.82

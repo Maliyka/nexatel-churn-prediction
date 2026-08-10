@@ -1,0 +1,99 @@
+/* ==========================================================================
+   NexaTel Churn Risk Console — Design Tokens
+   Concept: a telecom "control room" instrument panel. The churn-probability
+   gauge is styled after a signal-strength / battery meter — the one
+   deliberate visual signature of this app — everything else stays quiet
+   and disciplined around it.
+   ========================================================================== */
+
+:root {
+  /* --- Color: graphite control-room base + signal-strength risk scale --- */
+  --bg: #10131A;
+  --bg-grid: #12161E;
+  --surface: #181D26;
+  --surface-raised: #1F2531;
+  --surface-inset: #0D1016;
+  --border: #2A3140;
+  --border-soft: #1F2530;
+
+  --text-primary: #EDF0F5;
+  --text-secondary: #8B93A6;
+  --text-tertiary: #5C6478;
+
+  --brand: #4C8DFF;
+  --brand-dim: #2C4E8F;
+
+  --signal-low: #34D399;
+  --signal-low-dim: #1B4B3A;
+  --signal-medium: #F2B84B;
+  --signal-medium-dim: #4E3E1C;
+  --signal-high: #EF5A5A;
+  --signal-high-dim: #4E2323;
+
+  /* --- Type --- */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  /* --- Layout --- */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --shadow-card: 0 1px 0 rgba(255,255,255,0.02) inset, 0 12px 24px -12px rgba(0,0,0,0.5);
+}
+
+* { box-sizing: border-box; }
+
+html, body { height: 100%; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(1200px 600px at 15% -10%, rgba(76,141,255,0.08), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(52,211,153,0.05), transparent 55%),
+    var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root { min-height: 100vh; }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+p { margin: 0; }
+
+button {
+  font-family: var(--font-body);
+  cursor: pointer;
+}
+
+input, select {
+  font-family: var(--font-body);
+}
+
+a { color: var(--brand); }
+
+::selection { background: var(--brand-dim); color: #fff; }
+
+/* Visible keyboard focus everywhere (accessibility floor) */
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}
+
+/* Respect reduced-motion preference */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
+}
+
+.mono { font-family: var(--font-mono); }
+
+.scrollbar-thin::-webkit-scrollbar { width: 8px; height: 8px; }
+.scrollbar-thin::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+.scrollbar-thin::-webkit-scrollbar-track { background: transparent; }

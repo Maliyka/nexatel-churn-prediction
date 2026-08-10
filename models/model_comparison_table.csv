@@ -1,0 +1,8 @@
+Model,Accuracy %,Precision %,Recall %,F1 %,ROC-AUC %
+Logistic Regression (SMOTE),74.59,51.39,79.14,62.32,83.69
+Logistic Regression (class_weight),73.81,50.43,77.54,61.12,83.93
+XGBoost (scale_pos_weight),74.88,52.06,67.65,58.84,81.34
+"KNN (SMOTE, k=15)",68.91,45.25,81.55,58.21,80.84
+XGBoost (SMOTE),78.0,58.79,57.22,57.99,82.47
+Random Forest (SMOTE),77.5,57.85,56.15,56.99,82.02
+Random Forest (class_weight),78.28,61.72,47.86,53.92,82.0
