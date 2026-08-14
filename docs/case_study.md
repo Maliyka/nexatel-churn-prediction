@@ -33,4 +33,4 @@ The model added a second, less obvious insight: the simplest model in the compar
 If this system helps the retention team successfully intervene on even 10% of the customers it correctly flags as high-risk, that's roughly **$167,000/year** in protected recurring revenue — from a model that costs nothing to run beyond normal cloud hosting, and a tool that requires no data science background to use.
 
 ---
-*Full technical writeup, code, and live demo: [GitHub repository link] · [Live app link]*
+*Full technical writeup, code, and live demo: https://github.com/Maliyka/nexatel-churn-prediction · https://nexatel-churn-prediction.vercel.app/*

@@ -2,8 +2,8 @@
 
 An end-to-end data science capstone: a messy business problem, a normalized SQL database, a full EDA → feature engineering → modeling → explainability pipeline, and a deployed full-stack web app a non-technical retention agent can actually use.
 
-**Live demo:** `<add your Vercel URL here after deployment>`
-**API docs:** `<add your Render URL here>/docs`
+**Live demo:** `https://nexatel-churn-prediction.vercel.app/`
+**API docs:** `https://nexatel-churn-prediction.onrender.com/docs`
 
 ![Score a customer](assets/screenshots/score_result.png)
 
@@ -171,16 +171,6 @@ npm run dev
 Open `http://localhost:5173`, fill out the customer form, click **Score customer**.
 
 ---
-
-## Deploying this yourself
-
-I built and tested every layer of this project, but I can't create accounts, push to your GitHub, or click "Deploy" on Render/Vercel on your behalf. **[`docs/deployment_guide.md`](docs/deployment_guide.md)** is a copy-paste, step-by-step walkthrough for exactly that last mile, covering:
-
-1. Creating your Supabase project and loading the data
-2. Pushing this folder to a new GitHub repository
-3. Deploying the backend to Render
-4. Deploying the frontend to Vercel
-5. Connecting the two and testing the live link end-to-end
 
 ## Further reading
 
